@@ -337,10 +337,10 @@ def user_stats(df):
 def display_raw_data(df):
     """
     Asks if the user would like to see some lines of data from the filtered dataset.
-    Displays 5 (show_rows) lines, then asks if they would like to see 5 more.
+    Displays 10 (show_rows) lines, then asks if they would like to see 10 more.
     Continues asking until they say stop.
     """
-    show_rows = 5
+    show_rows = 10
     rows_start = 0
     rows_end = show_rows - 1    # use index values for rows
 
@@ -349,7 +349,7 @@ def display_raw_data(df):
         raw_data = input('      (y or n):  ')
         if raw_data.lower() == 'y':
             # display show_rows number of lines, but display to user as starting from row as 1
-            # e.g. if rows_start = 0 and rows_end = 4, display to user as "rows 1 to 5"
+            # e.g. if rows_start = 0 and rows_end = 9, display to user as "rows 1 to 10"
             print('\n    Displaying rows {} to {}:'.format(rows_start + 1, rows_end + 1))
 
             print('\n', df.iloc[rows_start : rows_end + 1])
