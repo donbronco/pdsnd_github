@@ -374,7 +374,7 @@ def main():
         user_stats(df)
         display_raw_data(df)
 
-        restart = input('\n    Would you like to restart? (y or n):  ')
+        restart = input('\n    Would you like to restart the program? (y or n):  ')
         if restart.lower() != 'y':
             break
 
