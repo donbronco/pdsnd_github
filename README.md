@@ -2,7 +2,7 @@
 May 20th 2020
 
 ### Project Title
-Explore US Bikeshare Data
+Explore U.S. Bikeshare Data
 
 ### Description
 Udacity Nanodegree for Python
