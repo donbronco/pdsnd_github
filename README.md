@@ -6,5 +6,5 @@ Explore U.S. Bikeshare Data
 
 ### Description
 Udacity Nanodegree for Python
-Use Python to analyse and explore data.
-Answers interesting questions and computes descriptive statistics.
+Use Python to analyse and explore US bikeshare data.
+Answers interesting questions and computes descriptive statistics. Script takes in raw input to create an interactive experience in the terminal to present these statistics.
