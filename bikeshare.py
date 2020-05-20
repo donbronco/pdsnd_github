@@ -16,7 +16,7 @@ def get_filter_city():
     Returns:
         (str) city - name of the city to analyze
     """
-    print('Hello! Let\'s explore some US bikeshare data together!')
+    print('Hello! Let\'s explore some US bikeshare data!')
     # TO DO: get user raw_input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     while 1 == 1 :
         city = input("\nenter the name of the city to analyze city names are as follows\nchicago,\nnew york city,\nwashington. \n").lower()
@@ -337,10 +337,10 @@ def user_stats(df):
 def display_raw_data(df):
     """
     Asks if the user would like to see some lines of data from the filtered dataset.
-    Displays 10 (show_rows) lines, then asks if they would like to see 10 more.
+    Displays 5 (show_rows) lines, then asks if they would like to see 5 more.
     Continues asking until they say stop.
     """
-    show_rows = 10
+    show_rows = 5
     rows_start = 0
     rows_end = show_rows - 1    # use index values for rows
 
@@ -349,7 +349,7 @@ def display_raw_data(df):
         raw_data = input('      (y or n):  ')
         if raw_data.lower() == 'y':
             # display show_rows number of lines, but display to user as starting from row as 1
-            # e.g. if rows_start = 0 and rows_end = 9, display to user as "rows 1 to 10"
+            # e.g. if rows_start = 0 and rows_end = 4, display to user as "rows 1 to 5"
             print('\n    Displaying rows {} to {}:'.format(rows_start + 1, rows_end + 1))
 
             print('\n', df.iloc[rows_start : rows_end + 1])
@@ -374,7 +374,7 @@ def main():
         user_stats(df)
         display_raw_data(df)
 
-        restart = input('\n    Would you like to restart? (y or n):  ')
+        restart = input('\n    Would you like to restart the program? (y or n):  ')
         if restart.lower() != 'y':
             break
 
