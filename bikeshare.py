@@ -16,7 +16,7 @@ def get_filter_city():
     Returns:
         (str) city - name of the city to analyze
     """
-    print('Hello! Let\'s explore some US bikeshare data together!')
+    print('Hello! Let\'s explore some US bikeshare data!')
     # TO DO: get user raw_input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     while 1 == 1 :
         city = input("\nenter the name of the city to analyze city names are as follows\nchicago,\nnew york city,\nwashington. \n").lower()
